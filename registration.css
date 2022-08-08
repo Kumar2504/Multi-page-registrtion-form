@@ -1,0 +1,39 @@
+body{
+    background-image: url(r.jpg);
+    font-family: Calibri, Helvetica, sans-serif;  
+}
+
+.myRegForm {  
+    padding: 15px;
+    margin: auto;
+    width: 50%; 
+    font-weight:bold;
+    border: 3px solid mintcream
+}
+
+.error-form {
+    color: darkred;
+}
+
+P{
+    color: darkred;
+}
+
+.reg-title {
+
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-weight: bold;
+    color: mintcream;
+    font-size:x-large
+    
+}
+
+div{
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.reginfo{
+    text-align: right ;
+}
