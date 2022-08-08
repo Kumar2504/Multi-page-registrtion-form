@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link rel="stylesheet" href="registration.css">
+    <script src="education.js"> </script>
+    <title>Educational information</title>
+</head>
+<body>
+
+    <div id="regFormDiv" class="regFormDiv">
+   
+        <div class="reg-title">
+            <center><h2>Educational informataion</h2></center>
+        </div>
+
+        <form target="_blank" action="upload.html" method="POST" id="myRegForm" class="myRegForm">
+
+            <div>
+                <label><b>HSC Institution name :</b></label>
+                <input required type="text" class="form-data" name="Institution name" id="regInsth" placeholder="enter  institution name">
+                <label id="error_regInsth" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>HSC Board :</b></label>
+                <input required type="text" class="form-data" id="regBoardh" list="board" placeholder="selet the board">
+                <datalist id="board">
+                    <option>CBSE</option>
+                    <option>ICSE</option>
+                    <option>STATE BOARD</option>
+                </datalist>
+                <label id="error_regBoardh" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>Score in HSC in percentage :</b></label>
+                <input required type="number" max="100" accuracy="2" size="100" min="0" class="form-data" id="regPercenth" placeholder="percentage">
+                <p>*Note : In percentage(%)</p>
+                <label id="error_regPercenth" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>SSC institute name :</b></label>
+                <input required type="text" class="form-data" id="regInsts" placeholder="enter institution name">
+                <label id="error_regInsts" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>SSC Board :</b></label>
+                <input required type="text" class="form-data" id="regBoards" list="board" placeholder="select the board">
+                <datalist id="board">
+                    <option>CBSE</option>
+                    <option>ICSE</option>
+                    <option>STATE BOARD</option>
+                </datalist>
+                <label id="error_regBoards" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>Score in SSC in percentage :</b></label>
+                <input required type="number" max="100" accuracy="2" min="0" class="form-data" id="regPercents" placeholder="percentage">
+                <p>*Note : In percentage(%)</p>
+                <label id="error_regPercents" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>currently pursuing :</b></label>
+                <input required type="text" class="form-data" id="regCurrent" placeholder="enter current education">
+                <label id="error_regCurrent" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+
+            <div>
+                <label><b>Currently education institution name :</b></label>
+                <input required type="text" class="form-data" id="regCurrentEdu" placeholder="enter institution name">
+                <label id="error_regCurrentEdu" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>Overal percentage :</b></label>
+                <input required type="number" max="100" accuracy="2" min="0" class="form-data" id="regOverPer" placeholder="percentage">
+                <p>*Note : In percentage(%)</p>
+                <label id="error_regOverPer" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div>
+                <label><b>current backlogs if any :</b></label>
+                <input required type="number" class="form-data" id="regCurBack" placeholder="enter backlogs">
+                <label id="error_regCurBack" class="error-form" style="display: none;">*Please enter the field.</label>
+            </div>
+
+            <div class="reginfo">
+                <button type="button" id="regFormSubmit">Submit</button>
+                <button type="button" id="regFormClear">Clear</button>
+                <button type="button" id="regNext">Next</button>
+            </div>
+
+         </form>
+
+    </div>
+
+</body>
+</html>
