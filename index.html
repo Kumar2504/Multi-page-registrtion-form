@@ -1,0 +1,116 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form -</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <link rel="stylesheet" href="registration.css">
+        <script src="registration.js"> </script>
+    </head>
+
+    <body>
+
+        <div id="regFormDiv" class="regFormDiv">
+
+            <div class="reg-title">
+                <center><h2>Registration Form</h2></center>
+            </div>
+
+            <form target="_blank" action="edu_info.html" method="POST" id="myRegForm" class="myRegForm">
+                
+                <div>
+                    <label><strong>Enter Name :</strong></label>
+                    <input required type="text" class="form-data" name="first-name" id="regFname" placeholder="First Name">
+                    <input required type="text" class="form-data" name="last-name" id="regLname" placeholder="Last Name">
+                    <label id="error_regname" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label>Enter Date of Birth:</label>
+                    <input required type="date" class="form-data" name="dob" id="regDob" placeholder="mm/dd/yyyy">
+                    <label id="error_regDob" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label>Enter Email Id:</label>
+                    <input required type="email" class="form-data" name="email" id="regEmail" placeholder="Email">
+                    <label id="error_regEmail" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label>Enter Father's Name:</label>
+                    <input required type="text" class="form-data" name="first-name" id="regFnameF" placeholder="First Name">
+                    <input required type="text" class="form-data" name="last-name" id="regLnameF" placeholder="Last Name">
+                    <label id="error_regnameF" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label>Enter Mother's Name:</label>
+                    <input required type="text" class="form-data" name="first-name" id="regFnameM" placeholder="First Name">
+                    <input required type="text" class="form-data" name="last-name" id="regLnameM" placeholder="Last Name">
+                    <label id="error_regnameM" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div id="regGenDiv" class="form-data-radio">
+                    <label for="gender">Select Gender:</label>
+                    <input type="radio" name="gender" id="regGend" value="male">Male
+                    <input type="radio" name="gender" id="regGend" value="female">Female
+                    <input type="radio" name="gender" id="regGend" value="other">Other
+                    <label id="error_regGend" class="error-form" style="display: none;">*Please mark any one.</label>
+                </div>
+
+                <div>
+                    <label for="nationality">Enter Nationality:</label>
+                    <input required type="text" class="form-data" name="naionality" id="regNation" placeholder="Nationality">
+                    <label id="error_regNation" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label for="telephone_home">Enter Telephone:</label>
+                    <input required type="tel" class="form-data" name="telephone_home" id="regTele" placeholder="Telephone">
+                    <label id="error_regTele" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label for="telephone_home">Enter Mobile:</label>
+                    <input required type="tel" class="form-data" name="mobile" id="regMobile" placeholder="Enter Mobile"/>
+                    <label id="error_regMobile" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label for="address">Enter Address:</label>
+                    <textarea required cols="60" rows="5" class="form-data" name="address" id="regAddress" placeholder="Enter your address"></textarea>
+                    <label id="error_regAddress" class="error-form" style="display: none;">*Please enter the field.</label>
+                </div>
+
+                <div>
+                    <label for="city">Choose City:</label>
+                    <select name="city" id="regCity">
+                        <option value="">--</option>
+                        <option value="bhubaneswar">Bhubaneswar</option>
+                        <option value="cuttack">Cuttack</option>
+                        <option value="berhampur">Berhampur</option>
+                        <option value="rourkela">Rourkela</option>
+                    </select>
+                    <label id="error_regCity" class="error-form" style="display: none;">*Please select any one.</label>
+                    
+                    <label for="country">Choose Country:</label>
+                    <select name="country" id="regCountry">
+                        <option value="">--</option>
+                        <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                    <option value="China">China</option>
+                    </select>
+                    <label id="error_regCountry" class="error-form" style="display: none;">*Please selet any one.</label>
+                </div>
+
+                <div class="reginfo">
+                    <button type="button" id="regFormSubmit">Submit</button>
+                    <button type="button" id="regFormClear">Clear</button>
+                    <button type="button" id="regNext">Next</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    </html>
