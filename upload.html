@@ -1,0 +1,79 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form -</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <link rel="stylesheet" href="upload.css">
+        <script src="upload.js"> </script>
+    </head>
+
+    <body>
+
+        <div id="upload-form-div" class="upload-form-cls  cls-div">
+
+            <div class="upload-page-title  cls-div">
+                <h2>Upload Documents</h2>
+            </div>
+
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="upload-body-content cls-div">
+                    <div class="upload-sub-content">
+                        <label for="passport photo">Recent passport size photograph:</label>
+                        <input type="file" accept="image/png, image/gif, image/jpeg" id="uploadPhoto" required>
+                        
+                        <div class="upload-note">
+                            <span id="error_uploadPhoto" class="error-upload" style="display: none;">*Please upload correct image file.</span>
+                            <p><strong>*Note : Image size should be less than 4MB.</strong></p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="upload-sub-content">
+                        <label for="marksheet">HSC marksheet :</label>
+                        <input type="file" accept="image/png, image/gif, image/jpeg, .doc, .docx, .pdf, .txt" id="uploadMarksH" required>
+                        
+                        <div class="upload-note">
+                            <span id="error_uploadMarksH" class="error-upload" style="display: none;">*Please upload correct file.</span>
+                            <p><strong>*Note : Image, Pdf, Doc size should be less than 4MB.</strong></p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="upload-sub-content">
+                        <label for="marksheet">SSC marksheet :</label>
+                        <input type="file" accept="image/png, image/gif, image/jpeg, .doc, .docx, .pdf, .txt" id="uploadMarksS" required>
+                        
+                        <div class="upload-note">
+                            <span id="error_uploadMarksS" class="error-upload" style="display: none;">*Please upload correct file.</span>
+                            <p><strong>*Note : Image, Pdf, Doc size should be less than 4MB.</strong></p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="upload-sub-content">
+                        <label for="semestermark">All semesters mark sheet in a single PDF or docs :</label>
+                        <input type="file" accept=".doc, .docx, .pdf, .txt" id="uploadSemMark" required>
+                        
+                        <div class="upload-note">
+                            <span id="error_uploadSemMarks" class="error-upload" style="display: none;">*Please upload correct file.</span>
+                            <p><strong>*Note : File size less than 10MB.</strong></p>
+                        </div>
+                    </div>
+
+
+                    <div class="upload-submit">
+                        <input type="submit" id="uploadSubmit" value="Submit">
+                        
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
